@@ -21,7 +21,12 @@ int get_word(char* str)
 	return(count_words);
 }
 
+int malloc_char(char* s, int* i; int* start)
+{
+	while(s[*i] == " ")
+		(*i)++;
 
+}
 
 char    **ft_split(char *str)
 {
@@ -36,7 +41,7 @@ char    **ft_split(char *str)
 		return(NULL);
 	while(count_words--)
 	{
-		buffer[++ind] = (free_func(str, malloc_char(s, &i, &start), start));
+		buffer[++ind] = (free_func(str, malloc_char(str, &i, &start), start));
 		if(buffer[ind])
 		{
 			while(ind)
